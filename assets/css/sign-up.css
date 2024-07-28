@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif; /* Exemplo de fonte */
+}
+
+body, html {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f2f2f2; /* Cor de fundo suave */
+}
+
+.form-container {
+    background-color: #fff; /* Fundo branco para o formulário */
+    padding: 2rem 2rem 1rem 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra leve para destaque */
+    width: 400px;
+    min-width: 300px; /* Ajuste a largura máxima para ser mais "gordinho" */
+    text-align: center;
+    margin: 0 1rem ; /* Adiciona margens laterais */
+}
+
+h1 {
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    color: #202020; /* Cor do título */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    color: #1d1d1d; /* Cor dos labels */
+    text-align: left;
+    width: 100%; /* Ocupa toda a largura disponível */
+}
+
+input[type="text"],
+input[type="password"] {
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc; /* Borda suave */
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #333; /* Cor do texto do input */
+    width: 100%; /* Ocupa toda a largura disponível */
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: #007bff; /* Cor da borda no foco */
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.2); /* Sombra no foco */
+}
+
+button {
+    padding: 0.8rem;
+    background-color: #007bff; /* Cor de fundo do botão */
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 1rem;
+}
+
+button:hover {
+    background-color: #0056b3; /* Cor do botão no hover */
+}
+
+.login-container {
+    margin-top: 1.5rem;
+}
+
+.login-container a {
+    display: inline-block;
+    padding: 0.6rem 1.5rem;
+    background-color: #28a745; /* Cor de fundo do botão de login */
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+}
+
+.login-container a:hover {
+    background-color: #1a6e2d; /* Cor do botão de login no hover */
+}
+
+.error-message {
+    margin-top: 1rem;
+    font-size: 1rem;
+    display: none; 
+}
